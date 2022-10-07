@@ -15,12 +15,17 @@ refs.stopBtn.addEventListener('click', onStopBtn);
 
 function onStartBtn() {
   refs.startBtn.disabled = true;
-  intervalId = setInterval(() => {
-    refs.body.style.backgroundColor = getRandomHexColor();
-  }, 1000);
+  refs.stopBtn.disabled = false;
+  changeBgColor();
+  intervalId = setInterval(changeBgColor, 1000);
 }
 
 function onStopBtn() {
   clearInterval(intervalId);
   refs.startBtn.disabled = false;
+  refs.stopBtn.disabled = true;
+}
+
+function changeBgColor() {
+  refs.body.style.backgroundColor = getRandomHexColor();
 }
