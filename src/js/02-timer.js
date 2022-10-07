@@ -10,7 +10,7 @@ const refs = {
   seconds: document.querySelector('span[data-seconds]'),
 };
 
-refs.startBtn.disabled = true;
+// refs.startBtn.disabled = true;
 refs.startBtn.addEventListener('click', () => {
   console.log(Í`m Alive!!!`);
 });
