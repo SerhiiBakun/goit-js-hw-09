@@ -7,7 +7,7 @@ const refs = {
   startBtn: document.querySelector('button[data-start]'),
   stopBtn: document.querySelector('button[data-stop]'),
 };
-
+refs.stopBtn.disabled = false;
 let intervalId = null;
 
 refs.startBtn.addEventListener('click', onStartBtn);

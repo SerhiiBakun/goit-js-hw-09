@@ -12,7 +12,7 @@ const refs = {
 
 // refs.startBtn.disabled = true;
 refs.startBtn.addEventListener('click', () => {
-  console.log(Í`m Alive!!!`);
+  console.log(`Alive!!!`);
 });
 
 console.log('hello!');
