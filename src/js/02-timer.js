@@ -15,8 +15,6 @@ refs.startBtn.addEventListener('click', () => {
   console.log(Í`m Alive!!!`);
 });
 
-let days = 22;
-refs.days.textContent = days;
 console.log('hello!');
 console.log(refs.dateInput);
 console.log(refs.days.textContent);
